@@ -80,6 +80,7 @@
         "webpack-dev-server": "3.7.2"
     },
     "dependencies": {
+        "jiff": "^0.7.3",
         "mapstore2": "file:MapStore2"
     },
     "scripts": {
