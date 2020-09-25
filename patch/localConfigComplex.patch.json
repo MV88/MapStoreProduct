@@ -1,0 +1,36 @@
+
+
+[
+  {"op": "replace", "jsonpath": "$.plugins.desktop..[?(@.name == 'TOC')].cfg.activeTooltipTitle", "value": true},
+  {"op": "replace", "jsonpath": "$.plugins.mobile..[?(@.name == 'TOC')].cfg.activeTooltipTitle", "value": false},
+  {"op": "replace", "jsonpath": "$.plugins.desktop..[?(@.name == 'Identify')].cfg",
+    "value": {
+      "showFullscreen": true,
+      "position": "bottom",
+      "size": 0.5,
+      "fluid": true,
+      "viewerOptions": {
+        "container": "{context.ReactSwipe}"
+      }
+    }
+  },
+  {"op": "remove", "jsonpath": "$.plugins..[?(@.name == 'MetadataExplorer')]"},
+
+
+  {"op": "add", "jsonpath": "$.plugins.desktop", "value": { "name": "IncidentiStradali", "cfg": {
+    "width": 300
+  }}},
+  {
+    "op": "add",
+    "jsonpath": "/plugins/desktop/-",
+    "description": "Manually added for testing purposes",
+    "value": {
+         "name": "MapTemplates",
+         "cfg": {
+                 "allowedTemplates": [{"id": 678}]
+         }
+     }
+ }
+
+
+]

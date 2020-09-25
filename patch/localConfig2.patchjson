@@ -1,0 +1,5 @@
+
+
+[
+    {"op": "add", "jsonpath": "$.plugins.desktop", "value": {"name": "MetadataExplorer"}}
+]
