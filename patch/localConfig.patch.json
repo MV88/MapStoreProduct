@@ -1,5 +1,0 @@
-
-
-[
-    {"op": "remove", "jsonpath": "$.plugins..[?(@.name == 'MetadataExplorer')]"}
-]
